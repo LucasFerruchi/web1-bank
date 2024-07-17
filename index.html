@@ -61,124 +61,232 @@
       </div>
     </nav>
   </header>
+  <h4>Texto de prueba para ver ramas protegidas</h4>
   <main>
-    <h1>Web-Bank</h1>
-    <h4>Cambio para hacer una prueba solamente</h4>
-    <h4> OTRO Cambio para hacer una prueba solamente</h4>
+    <section class="bg-primary text-center text-light py-5">
+      <h2 class="tituloRollingBank">Contactanos</h2>
+    </section>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-      rerum consequuntur sint quos totam repellendus molestias. Sint atque
-      similique tenetur provident, dicta, labore aut autem eius perferendis
-      blanditiis sed ex!
-    </p>
-  </main>
-  <!-- Modal con formulario -->
-  <div class="modal fade" id="exampleModalLog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
-            Iniciar sesion
-          </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Aquí va el formulario -->
+    <section class="container my-5">
+      <article class="row">
+        <div class="col-sm-12 col-md-6 mb-3">
+          <!--formulario-->
+          <h3>Envianos un mensaje</h3>
           <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Ingrese su email"
-                aria-describedby="emailText" required maxlength="50" />
-              <div id="emailText" class="form-text">
-                Nunca compartiremos su correo electrónico con
-                nadie más.
+            <div class="form-group">
+              <label>Nombre y apellido</label>
+              <input type="text" placeholder="Juan Perez" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="juanperez@gmail.com" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label>Consulta</label>
+              <textarea placeholder="ingrese su consulta" class="form-control" rows="8" required></textarea>
+            </div>
+            <div class="form-goup form-check p-0">
+              <input type="checkbox" class="form-chek-input" checked />
+              <label class="for-chek-label">Suscribite a nuestras novedades</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-6 mb-3">
+          <!--datos varios y mapa-->
+          <h3>Encontranos en nuestra casa central</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+            dolorum, quas pariatur nobis cumque sit, ratione facilis id
+            nesciunt eum soluta asperiores veritatis modi illum facere illo,
+            quo excepturi dicta?
+          </p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370777529!2d-65.2093904854509!3d-26.836696096500635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1605998789323!5m2!1ses-419!2sar"
+            class="w-100" height="350" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </article>
+      <section class="container">
+        <div class="d-none text-center">
+          <h2>DISPLAY NONE - APLICAR SEGUN EL TAMAÑO DEL DISPOSITIVO</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370777529!2d-65.2093904854509!3d-26.836696096500635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1605998789323!5m2!1ses-419!2sar"
+            class="w-100" height="350" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </section>
+    </section>
+  </main>
+  <div>
+    <!-- Modal con formulario -->
+    <div class="modal fade" id="exampleModalLog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+              Iniciar sesion
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Aquí va el formulario -->
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email"
+                  aria-describedby="emailText" required maxlength="50" />
+                <div id="emailText" class="form-text">
+                  Nunca compartiremos su correo electrónico con
+                  nadie más.
+                </div>
               </div>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required
-                minlength="4" maxlength="20" />
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="recordarme" />
-              <label class="form-check-label" for="recordarme">Recordarme</label>
-            </div>
-            <div class="d-flex justify-content-end">
-              <button type="button" class="m-1 btn btn-secondary" data-bs-dismiss="modal">
-                Cancelar
-              </button>
-              <button type="submit" class="m-1 btn btn-primary">
-                Iniciar
-              </button>
-            </div>
-          </form>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required
+                  minlength="4" maxlength="20" />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="recordarme" />
+                <label class="form-check-label" for="recordarme">Recordarme</label>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="m-1 btn btn-secondary" data-bs-dismiss="modal">
+                  Cancelar
+                </button>
+                <button type="submit" class="m-1 btn btn-primary">
+                  Iniciar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal con formulario -->
+    <div class="modal fade" id="exampleModalReg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+              Registrarse
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Aquí va el formulario -->
+            <form class="row p-2">
+              <div class="mb-3 col-md-6 p-1">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required
+                  maxlength="50" />
+              </div>
+              <div class="mb-3 col-md-6 p-1">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required
+                  maxlength="50" />
+              </div>
+              <div class="mb-3 col-md-6 p-1">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad" required min="18"
+                  max="120" />
+              </div>
+              <div class="mb-3 col-md-6 p-1">
+                <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="nacimiento" placeholder="Ingrese su nacimiento" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required
+                  maxlength="50" />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required
+                  minlength="4" maxlength="20" />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="recordarme" />
+                <label class="form-check-label" for="recordarme">Recordarme</label>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="m-1 btn btn-secondary" data-bs-dismiss="modal">
+                  Cancelar
+                </button>
+                <button type="submit" class="m-1 btn btn-primary">
+                  Aceptar
+                </button>
+              </div>
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
-  <!-- Modal con formulario -->
-  <div class="modal fade" id="exampleModalReg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
-            Registrarse
-          </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <footer class="bg-dark">
+    <section class="container">
+      <article class="mb-4">
+        <h4 class="d-inline mr-4 tituloRollingBank">RollingBank</h4>
+        <a href="#" class="text-secondary mr-2"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="text-secondary mr-2"><i
+            class="fab fa-twitter-square"></i></a>
+        <a href="#" class="text-secondary mr-2"><i class="fab fa-instagram-square"></i></a>
+      </article>
+      <article class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="text-secondary">Navegación</h5>
+          <ul class="lista">
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
         </div>
-        <div class="modal-body">
-          <!-- Aquí va el formulario -->
-          <form class="row p-2">
-            <div class="mb-3 col-md-6 p-1">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required
-                maxlength="50" />
-            </div>
-            <div class="mb-3 col-md-6 p-1">
-              <label for="apellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required
-                maxlength="50" />
-            </div>
-            <div class="mb-3 col-md-6 p-1">
-              <label for="edad" class="form-label">Edad</label>
-              <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad" required min="18"
-                max="120" />
-            </div>
-            <div class="mb-3 col-md-6 p-1">
-              <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
-              <input type="date" class="form-control" id="nacimiento" placeholder="Ingrese su nacimiento" required />
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required
-                maxlength="50" />
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required
-                minlength="4" maxlength="20" />
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="recordarme" />
-              <label class="form-check-label" for="recordarme">Recordarme</label>
-            </div>
-            <div class="d-flex justify-content-end">
-              <button type="button" class="m-1 btn btn-secondary" data-bs-dismiss="modal">
-                Cancelar
-              </button>
-              <button type="submit" class="m-1 btn btn-primary">
-                Aceptar
-              </button>
-            </div>
-          </form>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="text-secondary">Legales</h5>
+          <ul class="lista">
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="bg-dark"></footer>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <img src="/assets/img/usuariosfinancieros.png" alt="logo de usuarios financieros" class="w-75" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="text-secondary">Unite</h5>
+          <img src="/assets/img/badge-apple-store.svg" alt="logo apple store" class="mb-2" />
+          <img src="/assets/img/google-play-badge-bb.svg" alt="logo play store" />
+        </div>
+      </article>
+    </section>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
